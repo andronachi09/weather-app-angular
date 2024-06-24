@@ -1,0 +1,13 @@
+<div>
+    <input type="text" placeholder="search location" (keyup.enter)="searchLocation()" [(ngModel)]="searchQuery" />
+    <button class="primary" type="button" (click)="searchLocation()">
+        search
+    </button>
+</div>
+<div class="search-results" *ngIf="locations.length">
+    <ul>
+        <li *ngFor="let location of locations">
+            {{ location.name }}
+        </li>
+    </ul>
+</div>
