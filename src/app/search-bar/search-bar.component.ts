@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { SearchCity } from '../search-city';
 import { WeatherService } from '../services/weather.service';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './search-bar.component.html',
   styleUrl: './search-bar.component.css',
 })

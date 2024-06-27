@@ -8,6 +8,7 @@
     <ul>
         <li *ngFor="let location of locations">
             {{ location.name }}
+            <a [routerLink]="['/details', location.lat, location.lon]">Details</a>
         </li>
     </ul>
 </div>
